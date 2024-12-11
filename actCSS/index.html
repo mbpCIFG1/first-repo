@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fromulari Amb CSS</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <section class="form top">
+            <p class="h1">Formulari de registre d'usuari</p>
+            <p>miquelbonetpuig@a.cifpperedesongall.org</p>
+        </section>
+        <form>
+            <section class="form nom">
+                <label>Nom complet: </label>
+                <br>
+                <input type="text" name="nom" required placeholder="La vostra resposta">
+            </section>
+            <section class="form email">
+                <label>Correu electronic: </label>
+                <br>
+                <input type="email" name="email" required placeholder="La vostra resposta">
+            </section>
+            <section class="form password">
+                <label>Contrasenya: </label>
+                <br>
+                <input type="password" name="password" required minlength="8" placeholder="La vostra resposta">
+            </section>
+            <section class="form confPassword">
+                <label>Confirmar Contrasenya: </label>
+                <br>
+                <input type="password" name="confPassword" required minlength="8" placeholder="La vostra resposta">
+            </section>
+            <section class="form tel">
+                <label>Número de telèfon: </label>
+                <br>
+                <input type="tel" name="tel" placeholder="La vostra resposta">
+            </section>
+            <section class="form neixament">
+                <label>Data de neixament: </label>
+                <br>
+                <input type="date" name="date" required placeholder="La vostra resposta">
+            </section>
+            <section class="form genere">
+                <label>Genere: </label>
+                <br>
+                Home:
+                <input type="radio" name="Genere" id="Home">
+                Dona:
+                <input type="radio" name="Genere" id="Dona">
+                Un altre:
+                <input type="radio" name="Genere" id="Altra">
+            </section>
+            <section class="form pais">
+                <label>Pais: </label>
+                <br>
+                <select name="Pais">
+                    <option value="España">España</option>
+                    <option value="USA">USA</option>
+                    <option value="França">França</option>
+                </select>
+            </section>
+            <section class="form termes">
+                <label>Acceptar termes i condicions: </label>
+                <input type="checkbox" name="Termes" required>
+            </section>
+            <section class="enviar">
+                <br>
+                <input type="submit" name="Enviar">
+                <input type="reset" name="reset">
+            </section>
+        </form>
+    </body>
+</html>
